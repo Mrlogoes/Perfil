@@ -6,22 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Toast
-import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import com.example.perfil.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
 
     // ViewBinding — gerado automaticamente a partir de activity_meu_perfil.xml
-    private lateinit var binding: ActivityPerfilBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         // Inflar o layout via binding
-        binding = ActivityPerfilBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupUserData()
@@ -33,7 +31,7 @@ class MainActivity : AppCompatActivity() {
      * Substitua pelos dados reais vindos de ViewModel / SharedPreferences / API.
      */
     private fun setupUserData() {
-        binding.tvNomeUsuario.text = "Eduardo Zardo Soares"
+        binding.tvNomeUsuario.text = "Murilo Gomes Carvalho Góes"
 
         // Para carregar imagem de URL, use Glide ou Picasso:
         // Glide.with(this).load(usuario.fotoUrl).into(binding.imgPerfil)

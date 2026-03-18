@@ -297,7 +297,7 @@
 
                 <!-- Atendimento ao Cliente(SAC) -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardAtendimentoCliente"
+                    android:id="@+id/cardSAC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
